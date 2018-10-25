@@ -50,24 +50,28 @@ table {
 
 @font-face {
   font-family: "Bebas Neue";
-  src: url("/assets/fonts/bebasneue.otf") format("opentype");
+  src: url("./assets/fonts/bebasneue.otf") format("opentype");
   }
 
 html {
   font-family: 'PT Sans', sans-serif;
-  font-size: 16px;  
+  font-size: 16px;
 }
 
 h1 {
+  font-family: 'PT Sans', sans-serif;
   font-size: 1.6em;
   font-weight: 600;
 }
 
 h2 {
+  font-family: 'PT Sans', sans-serif;
   font-size: 1.2em;
+  font-weight: 600;
 }
 
-p {    
+p {   
+  font-family: 'Roboto', sans-serif; 
   font-weight: 300;
   margin: 0.85em 0;
   line-height: 1.4em;
@@ -88,32 +92,12 @@ a:active {
   text-decoration: none;
 }
 
-a:visited {
-  color: rgb(255,255,255);
-  text-decoration: none;
-}
-
 .container {
   display: flex;  
 }
 
 .content h1 {
   padding-left: 2em;
-}
-
-.card {
-  margin-bottom: 1.8em;
-  padding: 1em 2em;
-  overflow: hidden;
-  border-radius: 3px;  
-}
-
-.card:hover {
-  background-color: rgba(255,255,255,0.3)
-}
-
-.card a {
-  font-weight: 900;
 }
 
 .card h1 {
@@ -130,11 +114,12 @@ a:visited {
 header {  
   position: fixed;  
   width: 100%;  
+  height: auto;
+  overflow: hidden;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: space-between;
-  height: 7%;
+  justify-content: space-between;  
   z-index: 10;
 }
 
@@ -154,7 +139,7 @@ header {
   background-color: rgb(153,153,153);
 }
 
-.contacto header {
+.contacto header { 
   background-color: rgb(204,204,204);
 }
 
@@ -209,7 +194,33 @@ nav li {
 }
 
 .logo a:hover {
-  color: (70,70,70); 
+  color: (255,255,255);
+}
+
+/* COLOR CORRECTION FOR LIGHT BACKGROUNDS */
+
+.presskit nav li a {
+  color: rgb(0,0,0);
+}
+
+.presskit .langbar a {
+  color: rgb(0,0,0);
+}
+
+.presskit .logo a {
+  color: rgb(0,0,0);
+}
+
+.presskit .logo a:active {
+  color: rgb(0,0,0);
+}
+
+.presskit .logo a:visited  {
+  color: rgb(0,0,0);
+}
+
+.presskit .logo a:hover {
+  color: rgb(0,0,0); 
 }
 
 /* MAIN */
@@ -262,7 +273,7 @@ footer p {
 .home body {
   background-color: rgb(0,0,0);
   color: rgb(255,255,255);
-  background-image: url("/assets/img/despierta1.jpg");
+  background-image: url("./assets/img/despierta1.jpg");
   background-repeat: no-repeat;
   background-position: right top;  
 }
@@ -278,6 +289,21 @@ footer p {
 .home main h1 {
   margin-bottom: 0.3em;
   margin-left: 1em;
+}
+
+.home .card {
+  margin-bottom: 1.8em;
+  padding: 1em 2em;
+  overflow: hidden;
+  border-radius: 3px;  
+}
+
+.home .card:hover {
+  background-color: rgba(255,255,255,0.3)
+}
+
+.home .card a {
+  font-weight: 900;
 }
 
 .home .video-container {
@@ -302,21 +328,33 @@ footer p {
   color: rgb(255,255,255);
 }
 
-.bio main {
-  padding-top: 12%;
-  background-image: url("/assets/img/rodajecm.jpg");
-  background-size: cover;    
+.bio main {  
+  padding-top: 9%;
+  background-image: url("./assets/img/rodajecm.jpg");
+  background-size: cover;
+  align-items: center;
 }
 
 .bio .content {
   margin-left: auto;
-  margin-right: 0%;
-  width: 55%;  
+  margin-right: 2%;
+  width: 55%;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 3px;
 }
 
 .bio .content p {
-  padding-right: 5%;
+  padding: 0 5%;
   color: rgb(51,51,51);
+  font-weight: 600;
+}
+
+.bio .content p:first-child {
+  padding-top: 3%;
+}
+
+.bio .content p:last-child {
+  padding-bottom: 3%;
 }
 
 /* SECCIÓN AGENDA */
@@ -324,160 +362,97 @@ footer p {
 /* SECCIÓN MEDIA */
 
 .media .container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;  
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .media .separator {
+  background-color: rebeccapurple;
+  height: auto;
   width: 100%;
 }
 
 .media .card {
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 100%;    
-}
-
-.media .card p {     
-  margin-left: 4%;  
-  font-size: 0.9em;  
-  font-weight: 300;
-  width: 80%;
-}
-
-.media .card p a {
-  font-weight: 900;
-}
-
-.media .card h1 {
-  margin-left: 4%; 
-  margin-top: 4%;
-  margin-bottom: 2%;
+  background-color: red;
+  height: auto;
+  width: 50%;  
 }
 
 .media .info {
-  height: 100%;
-  width: 50%;
+  height: 80%;  
+  background-color: burlywood;
 }
 
-.media .card .social {
-  align-content: space-around;
+.media .social {
+  height: 20%;  
+  background-color: gold;
 }
 
 .media .video-container {
-  position: relative;
-  width: 50%;  
-  padding-bottom: 56.1924%;
+  height: 100%;    
+  background-color: blue;  
 }
 
 .media .video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
-}
-
-.media .card img {
-  width: 180px;  
-  border: solid 1px white;
-}
-
-.media .card .desc {  
-  background-color: blueviolet;  
-  width: 50%;
-  align-self: flex-start;
-  flex-grow: 2;
-}
-
-.media .card .social {  
-  background-color: red;    
-  width: 50%;
-  flex-grow: 0;
-  flex-shrink: 1;  
-}
-
-.media .separator {
   width: 100%;
-  height: 400px;  
-}
-
-.media .separator.a {
-  background-image: url("/assets/img/jm6.jpg");  
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-.media .separator.b {
-  background-image: url("/assets/img/pcm.jpg");
-  background-position-y: 50%;
-  background-attachment: fixed;  
-  background-size: cover;
-  
-}
-
-.media .separator.c {
-  
-}
-
-.media .separator.d {
-  background-image: url("/assets/img/sab.jpg");
-  background-attachment: fixed;
-  background-position-y: 35%;
-  background-size: cover;
-}
-
-.fab {  
-  padding: 20px;
-  font-size: 2em;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;  
-}
-
-.fab:hover {
-  opacity: 0.5;
-}
-
-.fas  {  
-  padding: 20px;
-  font-size: 2em;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;   
-}
-
-.fas:hover {
-  opacity: 0.5;
-}
-
-/* SECCIÓN PRESSKIT */
-
-.presskit body {
-  background-color: rgb(200,200,200);
-  color: rgb(255,255,255);
-}
-
-.presskit main {
-  padding-top: 12%;
-  background-image: url("/assets/img/rodajecm.jpg");
-  background-repeat: no-repeat;
-  background-position: right top;
-  min-height: 800px;
 }
 
 /* SECCIÓN CONTACTO */
 
-.contacto body {
-  background-color: rgb(200,200,200);
-  color: rgb(255,255,255);
+.contacto main {
+  display: flex;
+  background-image: url("./assets/img/contacto.jpg");
+  background-size: cover;
+  align-items: center;
 }
 
-.contacto main {
+.contacto .content {
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 3px;
+}
+
+.contacto .content:first-child {
+  padding-top: 3%;
+}
+
+.contacto .content:last-child {
+  padding-bottom: 3%;
+}
+
+.contacto button {
+  display: block;
+}
+
+.contacto input {
+  display: block;  
+}
+
+.contacto form {  
+  padding: 2em;    
+}
+
+/* SECCIÓN PRESSKIT */
+
+.presskit main {  
+  width: 100%;
   padding-top: 12%;
-  background-image: url("/assets/img/contacto.jpg");
+  background-image: url("./assets/img/rodajecm.jpg");
   background-repeat: no-repeat;
-  background-position: right top;
-  min-height: 800px;
+  background-size: cover;
+  align-items: center;
+}
+
+.presskit .content {
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 3px;
+  margin: 0 auto;  
+  font-family: "PT Sans", sans-serif;
+  padding: 3%;
+  align-content: space-between;
+}
+
+.presskit .fas {
+  font-size: 3em;
 }
