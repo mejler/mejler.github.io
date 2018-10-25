@@ -375,21 +375,23 @@ footer p {
 .media .card {
   background-color: red;
   height: auto;
-  width: 50%;  
+  width: 100%;  
 }
 
 .media .info {
   height: 80%;  
+  width: 50%;
   background-color: burlywood;
 }
 
 .media .social {
   height: 20%;  
+  width: 50%;
   background-color: gold;
 }
 
 .media .video-container {
-  height: 100%;    
+  width: 50%;  
   background-color: blue;  
 }
 
