@@ -633,6 +633,7 @@ footer p {
 @media screen and (max-width: 480px) {
  
   header {
+    position: static;
     display: flex;    
     width: auto;
   }
