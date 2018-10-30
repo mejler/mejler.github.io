@@ -50,7 +50,7 @@ table {
 
 @font-face {
   font-family: "Bebas Neue";
-  src: url("./assets/fonts/bebasneue.otf") format("opentype");
+  src: url("/assets/fonts/bebasneue.otf") format("opentype");
   }
 
 html {
