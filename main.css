@@ -634,7 +634,7 @@ footer p {
  
   header {
     display: flex;    
-    width: 100%;
+    width: auto;
   }
 
   main {
@@ -671,6 +671,7 @@ footer p {
     display: block;
     width: 100vw;
     order: 2;
+    padding-bottom: 5px;  
   }
 
   .media .card .video-container {
