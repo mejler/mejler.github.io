@@ -675,14 +675,14 @@ footer p {
   .media .card .social {
     display: block;
     width: 100vw;
-    order: 1;
+    order: 3;
     padding-bottom: 5px;  
   }
 
   .media .card .video-container {
     display: block;
     width: 100vw;
-    order: 2;
+    order: 1;
   }
 
   .media .card .video-container .video {
