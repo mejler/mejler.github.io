@@ -1,531 +1,266 @@
-/* General reset */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-
-/* LAYOUT RULES */
+@@ -50,7 +50,7 @@ table {
 
 @font-face {
   font-family: "Bebas Neue";
   src: url("/assets/fonts/bebasneue.otf") format("opentype");
+  src: url("./assets/fonts/bebasneue.otf") format("opentype");
   }
 
 html {
-  font-family: 'PT Sans', sans-serif;
-  font-size: 16px;
-}
-
-h1 {
-  font-family: 'PT Sans', sans-serif;
-  font-size: 1.6em;
-  font-weight: 600;
-}
-
-h2 {
-  font-family: 'PT Sans', sans-serif;
-  font-size: 1.2em;
-  font-weight: 600;
-}
-
-p {   
-  font-family: 'Roboto', sans-serif; 
-  font-weight: 300;
-  margin: 0.85em 0;
-  line-height: 1.4em;
-}
-
-a {
-  color: rgb(255,255,255);
-  text-decoration: none;  
-}
-
-a:hover {
-  color: rgb(125,125,125);
-  text-decoration: none;
-}
-
-a:active {
-  color: rgb(125,125,125);
-  text-decoration: none;
-}
-
-.container {
-  display: flex;  
-}
-
-.content h1 {
-  padding-left: 2em;
-}
-
-.card img {
-  width: 180px;  
-  border: solid 1px white;
-}
-
-/* HEADER RULES */
-
-header {  
-  position: fixed;  
-  width: 100%;  
-  height: auto;
-  overflow: hidden;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between;  
-  z-index: 10;  
-}
-
-.home header {
-  background-color: rgb(0,0,0);
-}
-
-.bio header {
-  background-color: rgb(51,51,51);
-}
-
-.agenda header {
-  background-color: rgb(102,102,102);
-}
-
-.media header {
-  background-color: rgb(153,153,153);
-}
-
-.contacto header { 
-  background-color: rgb(204,204,204);
-}
-
-.presskit header {
-  background-color: rgb(255,255,255);
-}
-
-nav h1 {
-  display: inline-block;  
-}
-
-nav ul {
-  display: inline-block;
-  list-style-type: none;
-  white-space: nowrap; 
-  text-transform: lowercase;
-}
-
-nav li {
-  display: inline-block;
-  white-space: nowrap;
-  padding: 0 0.4em;
-  font-size: 1em;    
-}
-
-.langbar {
-  display: inline-block;  
-  white-space: nowrap;    
-  margin-right: 2%;
-  font-size: 0.8em 
-}
-
-.logo h1 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 3.2em;
-  font-weight: 100;
-  white-space: nowrap; 
-  margin-left: 2.5%;
-  letter-spacing: 0em;
-}
-
-.logo a {
-  color: rgb(255,255,255);
-}
-
-.logo a:active {
-  color: rgb(255,255,255);
-}
-
-.logo a:visited  {
-  color: rgb(255,255,255);
-}
-
-.logo a:hover {
-  color: (255,255,255);
-}
-
-/* COLOR CORRECTION FOR LIGHT BACKGROUNDS */
-
-.presskit nav li a {
-  color: rgb(0,0,0);
-}
-
-.presskit .langbar a {
-  color: rgb(0,0,0);
-}
-
-.presskit .logo a {
-  color: rgb(0,0,0);
-}
-
-.presskit .logo a:active {
-  color: rgb(0,0,0);
-}
-
-.presskit .logo a:visited  {
-  color: rgb(0,0,0);
-}
-
-.presskit .logo a:hover {
-  color: rgb(0,0,0); 
-}
-
-/* MAIN */
-
-main {
-  min-height: 90vh;
-}
-
-/* FOOTER */
-
-footer {  
-  bottom: 0;
+@ -232,6 +232,7 @@ footer {
   height: 3%;
   width: 100%;
   align-content: center;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .home footer {
-  background-color: rgb(0,0,0);    
-}
-
-.bio footer {
-  background-color: rgb(51,51,51);
-}
-
-.agenda footer {
-  background-color: rgb(102,102,102);
-}
-
-.media footer {
-  background-color: rgb(153,153,153);
-}
-
-.contacto footer {
-  background-color: rgb(204,204,204);
-}
-
-.presskit footer {
-  background-color: rgb(255,255,255);
-}
-
-footer p {  
-  text-align: right;
-  padding: 0;
-  margin: 0;  
-}
-
-/* SECCION HOME */
-
-.home body {
-  background-color: rgb(0,0,0);
-  color: rgb(255,255,255);
-  background-image: url("./assets/img/home.png");
-  background-repeat: no-repeat;
-  background-position: right top;  
-}
-
-.home main {
-  display: flex;
-  flex-direction: column;
-  padding-top: 5em;
-  width: 55%;
-  margin-left: 2%;
-}
-
-.home main h1 {
-  margin-bottom: 0.3em;
-  margin-left: 1em;
-}
-
-.home .card {
-  margin-bottom: 1.8em;
-  padding: 1em 2em;
-  overflow: hidden;
-  border-radius: 3px;  
-}
-
-.home .card:hover {
-  background-color: rgba(255,255,255,0.3)
-}
-
-.home .card a {
-  font-weight: 900;
-}
-
-.home .video-container {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.1924%;
-}
-
-.home .video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* SECCIÓN BIO */
-
-.bio body {
-  background-color: rgb(200,200,200);
-  color: rgb(255,255,255);
-}
-
-.bio main {  
-  padding-top: 9%;
-  background-image: url("./assets/img/bio.png");
-  background-size: cover;
-  align-items: center;
-}
-
-.bio .content {
-  margin-left: auto;
-  margin-right: 2%;
-  width: 55%;
-  background-color: rgba(255,255,255,0.3);
-  border-radius: 3px;
-}
-
-.bio .content p {
-  padding: 0 5%;
-  color: rgb(51,51,51);
-  font-weight: 600;
-}
-
-.bio .content p:first-child {
-  padding-top: 3%;
-}
-
-.bio .content p:last-child {
-  padding-bottom: 3%;
-}
-
-/* SECCIÓN AGENDA */
-
-/* SECCIÓN MEDIA */
-
+@ -360,7 +361,7 @@ footer p {
 .media .container {
   flex-direction: row;
   flex-wrap: wrap;  
   padding-top: 7%;
+  padding-top: 3.5%;
 }
 
 .media .separator {
-  width: 100%;
-  height: 50vh;
-}
-
-.media .separator.a {
-  background-image: url('./assets/img/jm6.png');
-  background-size: cover;
-  background-attachment: fixed; 
-  background-position-y: 25%;
-}
-
+@ -378,11 +379,19 @@ footer p {
 .media .separator.b {
   background-image: url('./assets/img/cocinamagnetica.png');
   background-size: cover;
+  background-attachment: fixed; 
 }
 
 .media .separator.c {
+  background-image: url('./assets/img/cmf.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.media .separator.d {
   background-image: url('./assets/img/sabalaje.png');
   background-size: cover;
+  background-attachment: fixed; 
 }
 
 .media .card {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: auto;
-  width: 100%;  
-}
+@ -395,8 +404,7 @@ footer p {
 
 .media .info {
   height: 80%;  
   width: 50%;  
   background-color: burlywood;
+  width: 50%;    
   display: flex;
   flex-wrap: wrap;
 }
-
-.media .info h1 { 
-  padding-top: 12.5%;  
-  padding-bottom: 1.5%;
-}
-
-.media .desc {  
-  padding: 0.85em 2em;
-}
-
-.media .social {  
-  height: 20%;  
-  width: 50%;  
-  font-size: 2.2em;
-  display: flex;
-  align-items: center;  
-}
-
-.media .fab, .media .fas {
-  margin: 0 1em 0 0;
+@ -423,7 +431,7 @@ footer p {
   color: rgb(102,102,102);
 }
 
 .media .fa-facebook {
+.media .fab:first-child, .media .fas:first-child {
   margin-left: 5%;
 }
 
-.media .fa-facebook:hover {
-  color: rgb(78,105,162);
-}
-
-.media .fa-youtube:hover {
-  color: rgb(255,0,0);
-}
-
-.media .fa-link:hover {
-  color: rgb(200,200,200);
-}
-
-.media .fa-instagram:hover {
-  color: rgb(56,151,240);
-}
-
-.media .video-container {  
-  height: 100%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-}
-
-.media .video {  
-  height: 71.5011%;
-  width: 90%;
+@ -456,10 +464,90 @@ footer p {
   margin: auto;
+}
+
+/* SECCIÓN AGENDA*/
+
+.agenda .container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  background-color: rgb(102,102,102); 
+  padding-top: 4.5%;
+}
+
+.agenda main h1 {
+  margin-bottom: 1em;  
+}
+
+.agenda .container li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.agenda main h3 {
+  font-weight: 900;
+  font-size: 1em;  
+  padding-bottom: 0.5em;
+  display: inline-block;  
+}
+
+.agenda main .date {
+  display: inline-block;
+  font-size: 0.7em;
+  font-style: italic;
+  color: rgb(204,204,204);    
+}
+
+.agenda .desc {
+  padding-left: 0.5em;
+  border-left: 2px solid rgba(204,204,204,0.6);
+  width: 82%;
+}
+
+.agenda main p {
+  display: block;
+  font-size: 0.9em;
+  margin: 0;  
+}
+
+.agenda .card {
+  margin: 0 auto; 
+  overflow: hidden;
+  border-radius: 3px;
+  width: 55%;
+  align-self: center;
+  border: 1px white solid;
+  padding: 3%;
+}
+
+.agenda .card ul {
+  font-family: 'Roboto', sans-serif;
+  margin-left: 3%;
+}
+
+.agenda .card li {
+  padding: 1em;
+  width: 90%;
+  border-radius: 3px;
+}
+.agenda .card li:hover {
+  background-color: rgba(255,255,255,0.3)
+}
+
+.agenda .card a {
+  color: rgb(204,204,204);
+  font-weight: 500;
+}
+
+.agenda .card a:hover {
+  color: rgb(255,255,255);
 }
 
 /* SECCIÓN CONTACTO */
 
 .contacto main {
   display: flex;
+  display: flex;  
   background-image: url("./assets/img/contacto.png");
   background-size: cover;
   background-position-y: 10%;
-  align-items: center;
-}
-
-.contacto .content {
-  margin: 0 auto;
-  background-color: rgba(255,255,255,0.3);
-  border-radius: 3px;
-}
-
-.contacto .content:first-child {
-  padding-top: 3%;
-}
-
-.contacto .content:last-child {
-  padding-bottom: 3%;
-}
+@ -482,10 +570,20 @@ footer p {
 
 .contacto button {
   display: block;
+  border-radius: 3px;
+  border: 0;
+  margin: 1em;
 }
 
 .contacto input {
   display: block;  
+  display: block;
+  border-radius: 3px;
+  border: 0px;
+  margin: 1em;
+}
+
+.contacto input::placeholder {
+  padding-left: 3px;
 }
 
 .contacto form {  
-  padding: 2em;    
-}
-
-/* SECCIÓN PRESSKIT */
-
-.presskit .container {  
-  width: 100%;
-  padding-top: 12%;
-  background-image: url("./assets/img/rodajecm.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: center; 
-}
-
-.presskit .content {
-  background-color: rgba(255,255,255,0.5);
-  border-radius: 3px;
-  margin: 0 auto;  
-  font-family: "PT Sans", sans-serif;
-  padding: 3%; 
-}
-
-.presskit .content a {
-  color: rgb(102,102,102);
-}
-
-.presskit .file {
-  padding: 1em 3em 1em 1em;
-}
-
-.presskit h2 {  
-  padding-left: 1em;
-  display: inline;    
-  vertical-align: middle;
-}
-
-.presskit .fas {
+@ -529,3 +627,86 @@ footer p {
   font-size: 3em;
   vertical-align: middle;
+}
+
+/* MOBILE STYLES */
+
+@media screen and (max-width: 480px) {
+ 
+  header {
+    display: flex;    
+    width: 100vw;
+  }
+
+  main {
+    width: 100vw;
+  }
+  
+  header .logo {
+    display: block;
+  }
+
+  header ul li {
+    display: block;
+    text-align: right;
+  }
+
+  .media .container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .media .separator{
+    display: none;
+  }
+
+  .media .card {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .media .card .info {
+    display: block;
+    width: 100vw;
+    order: 2
+  }
+
+  .media .card .social {
+    display: block;
+    width: 100vw;
+    order: 3;
+  }
+
+  .media .card .video-container {
+    display: block;
+    width: 480px;
+    height: 360px;
+    order: 1;
+  }
+
+  .media .video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .media .card p {    
+    width: 400px;
+  }
+
+/* TABLET STYLES */
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+
+
+
+main {
+
+}
+
+footer {
+  
+}
+
+
 }
