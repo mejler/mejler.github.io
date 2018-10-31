@@ -657,13 +657,21 @@ footer p {
     width: 100vw;
   }
 
+<<<<<<< HEAD
   .media .separator {
+=======
+  .media .separator{
+>>>>>>> parent of ebb9e17... Update main.css
     display: none;
   }
 
   .media .card {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
+=======
+    width: 100vw;
+>>>>>>> parent of ebb9e17... Update main.css
   }
 
   .media .card .info {
@@ -676,6 +684,7 @@ footer p {
     display: block;
     width: 100vw;
     order: 3;
+<<<<<<< HEAD
     padding-bottom: 5px;  
   }
 
@@ -684,6 +693,35 @@ footer p {
     width: 100vw;
     order: 1;
   }
+=======
+  }
+
+  .media .card .video-container {
+    display: block;
+    width: 480px;
+    height: 360px;
+    order: 1;
+  }
+
+  .media .video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .media .card p {    
+    width: 400px;
+  }
+
+/* TABLET STYLES */
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+
+
+
+main {
+
+}
+>>>>>>> parent of ebb9e17... Update main.css
 
   .media .card .video-container .video {
     width: 100%;
