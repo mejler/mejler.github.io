@@ -675,12 +675,12 @@ footer p {
   .media .card .social {
     display: block;
     width: 100vw;
-    order: 3;
+    order: 1;
     padding-bottom: 5px;  
   }
 
   .media .card .video-container {
     display: block;
     width: 100vw;
-    order: 1;
+    order: 2;
   }
