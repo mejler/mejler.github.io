@@ -681,7 +681,7 @@ footer p {
 
   .media .card .video-container {
     display: block;
-    width: 100vw;
+    width: 100%;
     order: 1;
   }
 
