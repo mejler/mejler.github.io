@@ -47,7 +47,6 @@ table {
 
 
 /* LAYOUT RULES */
-@media screen and (min-width 1024px) {
 
 @font-face {
   font-family: "Bebas Neue";
@@ -629,8 +628,6 @@ footer p {
   vertical-align: middle;
 }
 
-}
-
 /* MOBILE STYLES */
 
 @media screen and (max-width: 480px) {
@@ -683,7 +680,7 @@ footer p {
   }
 
   .media .card .video-container {
-    display: block;
+    display: flex;
     width: 100%;
     order: 1;
   }
