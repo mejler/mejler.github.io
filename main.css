@@ -47,6 +47,7 @@ table {
 
 
 /* LAYOUT RULES */
+@media screen and (min-width 1024px) {
 
 @font-face {
   font-family: "Bebas Neue";
@@ -626,6 +627,8 @@ footer p {
 .presskit .fas {
   font-size: 3em;
   vertical-align: middle;
+}
+
 }
 
 /* MOBILE STYLES */
