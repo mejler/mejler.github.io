@@ -657,7 +657,7 @@ footer p {
     width: 100vw;
   }
 
-  .media .separator{
+  .media .separator {
     display: none;
   }
 
@@ -684,3 +684,5 @@ footer p {
     width: 100vw;
     order: 2;
   }
+  
+}
