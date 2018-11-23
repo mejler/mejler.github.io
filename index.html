@@ -9,7 +9,7 @@
       <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-      <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="./assets/img/favicon/favicon.ico" type="image/x-icon">
       <script src="main.js"></script>
     </head>
 
@@ -23,38 +23,40 @@
         
         <nav>
           
-          <ul>
+          <ul class="es">
             <li><a href="/index.html">Noticias</a></li>
             <li><a href="/bio.html">Bio</a></li>
-            <li><a href="/agenda.html">Agenda</a></li>
             <li><a href="/media.html">Media</a></li>            
+            <li><a href="/agenda.html">Agenda</a></li>
             <li><a href="/contacto.html">Contacto</a></li>
             <li><a href="/presskit.html">Press kit</a></li>
           </ul>
           
-        </nav>       
+        </nav>
 
-        <p class="langbar">lang: <a href="#">ES</a> | <a href="#">EN</a></p>        
+        <p class="langbar">lang: <a href="#">ES</a> | <a onclick="script.js">EN</a></p>        
 
       </header>
       
       <main class="container">
 
-        <h1>Próximo concierto</h1>
+        
       
-        <div class="content next-date">           
+        <div class="nextdate es">
 
-          <div class="card">              
+          <h1>Próximo concierto</h1>  
+
+          <div class="content">              
             <p>Sáb. 10/11 21hs. con <a href="http://fb.me/lacocinamagnetica">Plachta y la Cocina Magnética</a> en Flora Casa Cultural, Villa Crespo CABA.</p>              
           </div>
 
         </div>
 
-        <h1>Noticias</h1>
+        <h1 class="es">Noticias</h1>
 
         <div class="news">
           
-          <div class="card">                
+          <div class="card es">
 
             <h2>Trailer nuevo</h2>
 
@@ -68,9 +70,18 @@
 
           </div>
 
-          <div class="card">
-            <h2>¡Nueva fecha!</h2>
-            <p>Mie. 12/12 21hs. con <a href="http://fb.me/julianmeklersexteto">Julián Mekler Sexteto</a> en Vicente el Absurdo (Julián Álvarez 1886, Palermo CABA).</p>
+          <div class="card newdate es">
+            <div class="title">
+                <h2>¡Nueva fecha!</h2>
+                <p class="date">Domingo 11/11</p>
+            </div>
+            <div class="content">
+              <div class="info">
+                <p>Con <a href="http://fb.me/lacocinamagnetica">Plachta y la Cocina Magnética</a> en <a href="https://www.instagram.com/labicicreacioncolectiva/">La Bicicletería</a>, 117 y 40 (La Plata) - 20hs.</p>
+                <p><a href="./agenda.html ">Ver más...</a></p>
+              </div>
+              <img src="./assets/img/flyers/cmbici.png"/>
+            </div>
           </div>    
 
         </div>
@@ -79,7 +90,7 @@
 
       <footer>
 
-        <p>2018. Hecho a mano.</p>
+        <p class="es">2018. Hecho a mano.</p>
 
       </footer>
 
