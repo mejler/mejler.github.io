@@ -634,20 +634,28 @@ footer p {
  
   header {
     position: static;
-    display: flex;    
+    display: flex;
+    flex-direction: column;
     width: 100vw;
+  }
+
+  header ul {
+    display: block;
+  }
+
+  header .langbar {
+    display: block;
+  }
+
+  header .logo {
+    display: block;
   }
 
   main {
     width: 100vw;
   }
   
-  header .logo {
-    display: block;
-  }
-
-  header ul li {
-    display: block;
+  header ul li {    
     text-align: right;
   }
 
