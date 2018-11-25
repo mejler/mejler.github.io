@@ -250,7 +250,8 @@ footer p {
   align-self: flex-start;
   margin-left: 15px;
   padding: 20px;
-  border-radius: 3px;  
+  border-radius: 3px;
+  transition: 1s;
 }
 
 .home .card:hover {
