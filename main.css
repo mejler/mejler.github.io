@@ -52,9 +52,9 @@ table {
 
 @font-face {
   font-family: 'Bebas Neue';
-  src: url('./assets/fonts/BebasNeue.otf') format('opentype');
-  src: url('bebasneue-webfont.woff2') format('woff2'),
-       url('bebasneue-webfont.woff') format('woff');
+  src: url('/assets/fonts/BebasNeue.otf') format('opentype');
+  src: url('/bebasneue-webfont.woff2') format('woff2'),
+       url('/bebasneue-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
